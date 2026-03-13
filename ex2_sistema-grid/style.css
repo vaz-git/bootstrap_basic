@@ -1,0 +1,22 @@
+.bg-custom {
+    background-color: aquamarine;
+}
+
+.bg-custom h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.bg-custom p {
+    text-align: center;
+    font-style: normal;
+    text-transform: lowercase;
+}
+
+
+
+.bg-danger {
+    text-align: center;
+}
