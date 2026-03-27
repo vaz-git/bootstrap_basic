@@ -28,10 +28,433 @@
   
 </head>
 <body>
+  <!-- NAVBAR -->
+  <!-- Primeira barra de navegação -->
+<nav class="navbar navbar-expand-lg destaque py-4 px-2" id="navbar">
+  <div class="container">
+    <!-- marca ou logo -->
+     <a class="navbar-brand" href="#">PerfectWatch</a>
 
+     <!-- itens da barra de navegação -->
+      <div id="navbar-items">
+        <div></div> <!--Espaço vazio, usdo para fazer a divisão do layout-->
 
-  <!-- 1ª Digitação (Aqui) -->
+        <!-- Formulario de busca  -->
+         <form class="d-flex" id="search-form">
+          <i class="bi bi-search primary-color"></i>
+          <input class="form-control me-2" type="search" placeholder="Busque o seu relogio..." aria-label="Search">
+          <button class="btn secondary-bg-color" type="submit">Pesquisar</button>
+         </form>
 
+         <!-- Icones da barra de navegação -->
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="bi bi-person"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="bi bi-heart"></i>
+              </a>
+              <span class="qty-info">5</span>
+            </li>
+            <li class="nav-item" id="bag-item">
+              <a class="nav-link" href="#">
+                <i class="bi bi-bag"></i>
+                <b>R$ 1290,12</b>
+              </a>
+              <span class="qty-info">8</span>
+            </li>
+          </ul>
+      </div>
+    </div>
+</nav>
 
+<!-- Barra de navegação inferior -->
+ <nav class="navbar navbar-expand-lg secondary-bg-color p-2" id="bottom-navbar-container">
+  <div class="container">
+    <!-- botão para mostrar/esconder o menu -->
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false" aria-label="toggle navigation">
+      <i class="bi bi-list"></i>
+     </button>
+
+    <!-- itens do menu de navegação inferior -->
+     <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
+      <li class="nav-item sobre">
+        <a class="nav-link" href="#">
+          Home
+        </a>
+      </li>
+      <li class="nav-item sobre">
+        <a class="nav-link" href="#">
+          Produtos
+        </a>
+      </li>
+      <li class="nav-item sobre">
+        <a class="nav-link" href="#">
+          Promoções
+        </a>
+      </li>
+      <li class="nav-item sobre">
+        <a class="nav-link" href="#">
+          Blog
+        </a>
+      </li>
+      <li class="nav-item sobre">
+        <a class="nav-link" href="#">
+          Contato
+        </a>
+      </li>
+     </ul>
+  </div>
+ </nav>
+
+ <!-- _____________________________________________________ -->
+
+ <!-- BANNERS -->
+  <div class="container" id="banners-container">
+    <div id="slider" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- primeiro slide do carousel -->
+        <div class="carousel-item active">
+          <img src="img/banner1.jpg" class="d-block w-100 img-fluid" alt="...">
+          <div class="carousel-caption destaque">
+            <h5>Relogios de luxo</h5>
+            <p>Para você estar pronto em qualquer situação</p>
+          </div>
+        </div>
+        <!-- segundo slide do carousel -->
+        <div class="carousel-item">
+          <img src="img/banner3.jpg" class="d-block w-100 img-fluid" alt="...">
+          <div class="carousel-caption destaque">
+            <h5>Linha Importada</h5>
+            <p>Conheça os melhores relogios suíços, com pronta entrega.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Botoes de controle para navegar entres slides -->
+       <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+       </button>
+       <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+       </button>
+    </div>
+
+    <!-- MINI BANNERS -->
+     <div class="container" id="mini-banners">
+      <!-- linha de mini banners -->
+       <div class="row justify-content-around">
+        <!-- mini banner 1 -->
+         <div class="col-12 dark-bg-color" id="mini-banner-1">
+          <h2>Nova Coleção</h2>
+          <img src="img/relogio1.png" alt="Relogio 1">
+          <a href="#">Compre Agora</a>
+         </div>
+         <!-- Mini banner 2 -->
+          <div class="col-12 secondary-bg-color" id="mini-banner-2">
+            <h2>Promoções</h2>
+            <img src="img/relogio2.png" alt="Relogio 1">
+            <a href="#">Compre Agora</a>
+          </div>
+          <!-- mini banner 3 -->
+           <div class="col-12 light-bg-color" id="mini-banner-3">
+            <h2 class="text-dark">Edição Limitada</h2>
+            <a href="#">Compre Agora</a>
+            <img src="img/relogio3.png" alt="Relogio 1">
+           </div>
+       </div>
+     </div>
+  </div>
+
+  <!-- __________________________________________ -->
+   <!-- BEST SELLERS -->
+
+   <div class="container" id="best-sellers">
+    <!-- titulo da seção -->
+     <h2 class="title primary-color">Best Sellers</h2>
+
+     <!-- Linha com os produtos best sellers -->
+      <div class="row">
+        <!-- primeiro produto -->
+         <div class="col-12 col-md-3">
+          <div class="card destaque">
+            <img src="img/relogio1.png" class="card-img-top img-fluid" alt="relogio">
+            <div class="card-body">
+              <!-- categoria do produto -->
+               <p class="card-category secondary-color">Rolex</p>
+               <!-- titulo do produto -->
+                <h5 class="card-title secondary-color">Rolex Submariner</h5>
+                <p class="card-text primary-color">
+                  <!-- preco original e preço com desconto do produto -->
+                  <span class="original-price">R$17.999,97</span>
+                  <span class="discount-price">R$8.549,97</span>
+                </p>
+                <!-- botão de compra do produto -->
+                 <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+         </div>
+         <!-- segundo produto -->
+           <div class="col-12 col-md-3">
+          <div class="card primary-bg-color">
+            <img src="img/relogio4.png" class="card-img-top img-fluid" alt="relogio">
+            <div class="card-body">
+              <!-- categoria do produto -->
+               <p class="card-category secondary-color">Patek Philippe</p>
+               <!-- titulo do produto -->
+                <h5 class="card-title secondary-color">Patek Nautilus</h5>
+                <p class="card-text primary-color">
+                  <!-- preco original e preço com desconto do produto -->
+                  <span class="original-price">R$12.999,97</span>
+                  <span class="discount-price">R$8.549,97</span>
+                </p>
+                <!-- botão de compra do produto -->
+                 <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+         </div>
+         <!-- terceiro produto -->
+           <div class="col-12 col-md-3">
+          <div class="card destaque">
+            <img src="img/relogio5.png" class="card-img-top img-fluid" alt="relogio">
+            <div class="card-body">
+              <!-- categoria do produto -->
+               <p class="card-category secondary-color">Audemars Royal</p>
+               <!-- titulo do produto -->
+                <h5 class="card-title secondary-color">Audemars Piguet</h5>
+                <p class="card-text primary-color">
+                  <!-- preco original e preço com desconto do produto -->
+                  <span class="original-price">R$9.999,97</span>
+                  <span class="discount-price">R$6.549,97</span>
+                </p>
+                <!-- botão de compra do produto -->
+                 <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+         </div>
+         <!-- quarto produto -->
+           <div class="col-12 col-md-3">
+          <div class="card primary-bg-color">
+            <img src="img/relogio6.png" class="card-img-top img-fluid" alt="relogio">
+            <div class="card-body">
+              <!-- categoria do produto -->
+               <p class="card-category secondary-color">Hublot</p>
+               <!-- titulo do produto -->
+                <h5 class="card-title secondary-color">Hublot big Bang</h5>
+                <p class="card-text primary-color">
+                  <!-- preco original e preço com desconto do produto -->
+                  <span class="original-price">R$37.999,97</span>
+                  <span class="discount-price">R$31.999,97</span>
+                </p>
+                <!-- botão de compra do produto -->
+                 <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+         </div>
+      </div>
+   </div>
+  
+   <!-- ______________________________________ -->
+    <!-- BANNER DESTAQUE -->
+
+    <div class="container-fluid" id="bottom-banner">
+      <div class="row">
+        <!-- Coluna para texto -->
+         <div class="col-12 col-md-8">
+          <!-- subtitulo da oferta -->
+           <p class="primary-color offer-subtitle">Desconto de até 75%</p>
+           <!-- titulo do banner -->
+            <h2 class="light-color">Relogio X</h2>
+            <!-- Descrição do banner -->
+             <p class="secondary-color">Presentei o seu amor com este relogio de luxuoso</p>
+             <!-- botao de ação -->
+              <a href="#" class="btn btn-primary">Comprar agora</a>
+         </div>
+         <!-- colona para imagem  -->
+         <div class="col-12 col-md-4">
+          <img src="img/relogio7.png" alt="Relogio 7">
+         </div>
+      </div>
+    </div>
+
+    <!-- ________________________________________ -->
+     <!-- NOVIDADES -->
+
+     <div class="container" id="new-products">
+      <!-- titulo da seção -->
+       <h2 class="title primary-color">Novidades</h2>
+
+       <!-- Linha com conteudo da seção -->
+        <div class="row">
+          <!-- coluna para o banner de novidades (apenas em telas maiores) -->
+           <div class="col-12 col-md-3 d-none d-md-flex" id="new-products-banner">
+            <!-- subtitulo do banner -->
+             <p class="secondary-color">Os melhores</p>
+             <!-- titulo do banner -->
+              <h3>Relógios</h3>
+              <!-- descrição do banner -->
+               <p class="primary-color">Pelos melhores preços</p>
+           </div>
+           <!-- coluna principal para os produtos -->
+            <div class="col-12 col-md-9">
+              <!-- linha para os cards de produtos -->
+               <div class="row">
+                <!-- primeiro produto -->
+                 <div class="col-12 col-md-4">
+                  <div class="card primary-bg-color">
+                    <!-- imagem do produto -->
+                     <img src="img/relogio7.png" class="card-img-top img-fluid" alt="relogio">
+                     <div class="card-body">
+                         <!-- categoria do produto -->
+                       <p class="card-category secondary-color">Relogio</p>
+                       <!-- titulo do produto -->
+                        <h5 class="card-title secondary-color">Nome do produto</h5>
+                        <!-- preco do produto -->
+                         <p class="card-text primary-color">R$17.999,97</p>
+                         <!-- Botão de compra -->
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                     </div>
+                  </div>
+                 </div>
+                 <!-- Segundo produto  -->
+                  <div class="col-12 col-md-4">
+                    <div class="card primary-bg-color">
+                      <img src="img/relogio6.png" class="card-img-top img-fluid" alt="relogio">
+                      <div class="card-body">
+                        <p class="card-category secondary-color">Relogio</p>
+                        <h5 class="card-title secondary-color">Nome do produtos</h5>
+                        <p class="card-text primary-color">R$17.999,97</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- terceiro produto -->
+                   <div class="col-12 col-md-4">
+                    <div class="card primary-bg-color">
+                      <img src="img/relogio5.png" class="card-img-top img-fluid" alt="relogio">
+                      <div class="card-body">
+                        <p class="card-category secondary-color">Relogio</p>
+                        <h5 class="card-title secondary-color">Nome do produto</h5>
+                        <p class="card-text primary-color">R$17.999,97</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                   </div>
+                   <!-- Quarto produto -->
+                    <div class="col-12 col-md-4">
+                      <div class="card primary-bg-color">
+                        <img src="img/relogio4.png" class="card-img-top img-fluid" alt="Relogio">
+                        <div class="card-body">
+                          <p class="card-category secondary-color">Relogio</p>
+                          <h5 class="card-title secondary-color">Nome do produto</h5>
+                          <p class="card-text primary-color">R$17.999,97</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- quinto produto -->
+                     <div class="col-12 col-md-4">
+                      <div class="card primary-bg-color">
+                        <img src="img/relogio3.png" class="card-img-top img-fluid" alt="relogio">
+                        <div class="card-body">
+                          <p class="card-category secondary-color">Relogio</p>
+                          <h5 class="card=title secondary-color">Nome do produto</h5>
+                          <p class="card-text primary-color">R$17.999,97</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                     </div>
+                     <!-- sexto produto -->
+                      <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                          <img src="img/relogio2.png" class="card-img-top img-fluid" alt="relogio">
+                          <div class="card-body">
+                            <p class="card-category secondary-color">Relogio</p>
+                            <h5 class="card-title secondary-color">Nome do produtos</h5>
+                            <p class="card-text primary-color">R$17.999,97</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
+                        </div>
+                      </div>
+               </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- ____________________________________________________ -->
+      <!-- Gallery -->
+
+    <div class="container-fluid" id="gallery">
+      <div class="row">
+        <!-- colunas para a imagens da galeria -->
+         <div class="col-6 col-md-2 image-container" id="insta1"></div>
+         <div class="col-6 col-md-2 image-container" id="insta2"></div>
+         <div class="col-6 col-md-2 image-container" id="insta3"></div>
+         <div class="col-6 col-md-2 image-container" id="insta4"></div>
+         <div class="col-6 col-md-2 image-container" id="insta5"></div>
+         <div class="col-6 col-md-2 image-container" id="insta6"></div>
+      </div>
+    </div>
+
+    <!-- footer -->
+     <footer id="footer">
+      <div class="container-fluid" id="footer-links-container">
+        <div class="row">
+          <!-- coluna para o links de paginas -->
+           <div class="col-12 col-md-4 footer-column">
+            <h3>Páginas</h3>
+            <!-- links de paginas -->
+             <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="secondary-color">Home</a></li>
+              <li class="mb-2"><a href="#" class="secondary-color">Categorias</a></li>
+              <li class="mb-2"><a href="#" class="secondary-color">Promoções</a></li>
+              <li class="mb-2"><a href="#" class="secondary-color">Contato</a></li>
+             </ul>
+           </div>
+           <div class="col-12 col-md-4 footer-column" id="footer-center">
+            <h3>PerfectWatch</h3>
+            <p class="secondary-color">Algum duvida? Ligue para nós</p>
+            <p class="store-phone"><i class="bi bi-telephone"></i>(50)99999-9999</p>
+          </div>
+          <div class="col-12 col-md-4 footer-column">
+            <h3>Informações</h3>
+          <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="secondary-color">Politica de privacidade</a></li>
+              <li class="mb-2"><a href="#" class="secondary-color">Politica de entregas</a></li>
+              <li class="mb-2"><a href="#" class="secondary-color">Rastreie seu pedido</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- seção para newsletter -->
+       <div class="container-fluid" id="newsletter-container">
+        <div class="col-12">
+          <div class="row">
+            <p class="secondary-color">Se increva na nossa newsletter</p>
+            <!-- formulario para inscrição na newsletter -->
+             <form class="d-flex" id="news-form">
+              <i class="bi bi-envelope primary-color"></i>
+              <input class="form-control me-2" placeholder="Insira seu e-mail">
+              <button class="btn secondary-bg-color" type="submit">Enviar</button>
+             </form>
+          </div>
+        </div>
+        <!-- icones de redes sociais -->
+         <div class="col-12" id="social-container">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-youtube"></i>
+          <i class="bi bi-twitter"></i>
+         </div>
+       </div>
+       <!-- texto de direitos autorais -->
+        <div class="container" id="copy-container">
+          <p>Alguns direitos reservados @2023 <span class="primary-color">PerfectWatch</span> - A sua loja de relogios</p>
+        </div>
+     </footer>
 </body>
 </html>
